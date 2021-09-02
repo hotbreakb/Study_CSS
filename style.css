@@ -1,0 +1,51 @@
+:root{
+    --nav-background: #F7F6F2;
+    --nav-font: #4B6587;
+}
+
+body{
+    margin: 0;
+}
+
+nav{
+    background-color: var(--nav-background);
+    color: var(--nav-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    /* width: 100%; */
+}
+
+.navbar__title{
+    display: flex;
+    font-size: 20px;
+    padding: 8px 12px;
+}
+
+.navbar__title img{
+    width: 24px;
+    padding-right: 10px;
+}
+
+.navbar__menu{
+    display: flex;
+}
+
+.navbar__menu li{
+    list-style: none;
+    padding: 8px 12px;
+}
+
+.navbar__icons{
+    display: flex;
+}
+
+.navbar__icons img{
+    width: 20px;
+}
+
+.navbar__icons li{
+    list-style: none;
+    padding: 8px 12px;
+}
