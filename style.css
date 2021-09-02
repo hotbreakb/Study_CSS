@@ -48,6 +48,10 @@ a{
     color: white;
 }
 
+.navbar__menu li:hover a{
+    color: white;
+}
+
 .navbar__icons{
     display: flex;
     padding: 0;
