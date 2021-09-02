@@ -11,10 +11,14 @@ nav{
     background-color: var(--nav-background);
     color: var(--nav-font);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 8px 12px;
-    /* width: 100%; */
+}
+
+a{
+    text-decoration: none;
+    color: var(--nav-font);
 }
 
 .navbar__title{
@@ -30,6 +34,7 @@ nav{
 
 .navbar__menu{
     display: flex;
+    padding: 0;
 }
 
 .navbar__menu li{
@@ -37,8 +42,15 @@ nav{
     padding: 8px 12px;
 }
 
+.navbar__menu li:hover{
+    background-color: tomato;
+    border-radius: 4px;
+    color: white;
+}
+
 .navbar__icons{
     display: flex;
+    padding: 0;
 }
 
 .navbar__icons img{
@@ -48,4 +60,43 @@ nav{
 .navbar__icons li{
     list-style: none;
     padding: 8px 12px;
+}
+
+.navbar__active{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        flex-direction: column;
+        /* align-items: center; */
+        align-items: flex-start;
+    }
+
+    .navbar__menu{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar__menu li{
+        text-align: center;
+        width: 100%;
+        padding: 8px 0px;
+    }
+
+    .navbar__icons{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navbar__active{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    .navbar__active img{
+        width: 30px;
+    }
 }
