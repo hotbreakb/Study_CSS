@@ -1,0 +1,201 @@
+:root {
+  --header-color: #d4ecdd;
+  --header-font: #112031;
+  --info-hashtag: #185adb;
+  --date-font: #444444;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* ----- header ----- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: var(--header-color);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--header-font);
+}
+
+.header__title img {
+  width: 20px;
+}
+
+.header__icons img {
+  width: 20px;
+}
+
+/* ----- info ----- */
+
+/* --- topbar --- */
+
+.hashtag {
+  padding: 0 15px;
+}
+
+.hashtag p {
+  font-size: 12px;
+  color: var(--info-hashtag);
+}
+
+.title {
+  padding: 0 15px;
+}
+
+.title p {
+  font-size: 15px;
+}
+
+.date {
+  padding: 0 15px;
+}
+
+.date p {
+  font-size: 8px;
+  color: var(--date-font);
+}
+
+/* --- icons --- */
+
+.icons ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 15px;
+}
+
+.icons li {
+  list-style: none;
+  font-size: 12px;
+  text-align: center;
+}
+
+.icons img {
+  width: 20px;
+  display: block;
+  padding: 10px;
+}
+
+/* --- youtuber --- */
+
+.youtuber {
+  display: flex;
+  justify-content: space-between;
+}
+
+.youtuber__info {
+  display: flex;
+  padding: 0 15px;
+  align-items: center;
+}
+
+.youtuber__info img {
+  width: 45px;
+}
+
+.youtuber__text {
+  margin: 0 5px;
+}
+
+.youtuber__name {
+  display: block;
+  font-size: 15px;
+}
+
+.youtuber__name p {
+  margin: 0;
+}
+
+.youtuber_subscriber {
+  font-size: 10px;
+  color: var(--date-font);
+}
+
+.youtuber_subscriber p {
+  margin: 0;
+}
+
+.youtuber__btn {
+  padding: 15px;
+}
+
+.youtuber__btn a {
+  font-size: 13px;
+  text-decoration: none;
+  color: var(--date-font);
+}
+
+/* UpNext */
+
+.UpNext {
+  padding: 0 15px;
+}
+
+.UpNext p {
+  font-size: 13px;
+  color: gray;
+  margin: 0;
+}
+
+.UpNext ul {
+  padding: 0;
+}
+
+.UpNext li {
+  list-style: none;
+}
+
+.UpNext Img {
+  width: 150px;
+}
+
+.next li {
+  padding: 10px 0;
+}
+
+.next__video {
+  display: flex;
+}
+
+.next__video__info {
+  padding: 0 10px;
+}
+
+.next__video__title p {
+  margin: 0;
+}
+
+.next__video__youtuber p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.next__video__views p {
+  margin: 0;
+  font-size: 8px;
+}
+
+.next__video__btn img {
+  width: 15px;
+}
+
+.UnderVideo {
+  padding: 0;
+}
+
+.UnderVideo li {
+  list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .UnderVideo {
+    display: flex;
+  }
+}
